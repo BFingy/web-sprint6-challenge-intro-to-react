@@ -32,12 +32,12 @@ function App() {
   // ❗ Create state to hold the data from the API
   // ❗ Create effects to fetch the data and put it in state
   return (
-    <div className='character-card'>
+    <div>
       <h2>Star Wars Characters</h2>
       <p>See the README of the project for instructions on completing this challenge</p>
       {/* ❗ Map over the data in state, rendering a Character at each iteration */}
       {people.map(char => {
-        return <Character
+        return <Character className='character-card'
          data={char}
          key={char.id}
          fullName={char.name}
