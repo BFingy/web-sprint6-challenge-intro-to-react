@@ -36,14 +36,14 @@ function Character({ data, fullName, birth, mass, height, gender, hair, eye, hom
             <p>Gender: {gender}</p>
             <p>Hair Color: {hair}</p>
             <p>Eye Color: {eye}</p>
-            <p onClick={toggleCharacterDetails}>more...</p>
+            <h3 className='character-planet'onClick={toggleCharacterDetails}>Homeworld: {homeworld}</h3>
           </>
         )
       }
 
       {/*this should render when the planet name button is clicked and closed when clicked again */}
       {
-        showCharacterDetails && (
+        showCharacterDetails && showPlanetDetails && (
           <>
             <h3>{homeworld}</h3>
             <p>Orbital Period: {planetDetails.orbital_period}</p>
