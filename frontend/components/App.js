@@ -37,7 +37,7 @@ function App() {
       <p>See the README of the project for instructions on completing this challenge</p>
       {/* ❗ Map over the data in state, rendering a Character at each iteration */}
       {people.map(char => {
-        return <Character className='character-card'
+        return <Character 
          data={char}
          key={char.id}
          fullName={char.name}
